@@ -1,20 +1,18 @@
+// eslint-disable-next-line no-unused-vars
+import Main from './src/components/Main';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import { NativeRouter } from 'react-router-native';
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Less goo bois</Text>
+    <>
+      <NativeRouter>
+        <Main />
+      </NativeRouter>
       <StatusBar style="auto" />
-    </View>
+    </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
