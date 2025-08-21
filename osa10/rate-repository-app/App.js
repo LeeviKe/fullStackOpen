@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import Main from './src/components/Main';
 import { StatusBar } from 'expo-status-bar';
 
