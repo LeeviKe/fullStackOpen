@@ -1,12 +1,7 @@
-import { getDefaultConfig } from '@expo/metro-config';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const { getDefaultConfig } = require('@expo/metro-config');
 
 const defaultConfig = getDefaultConfig(__dirname);
 
 defaultConfig.resolver.sourceExts.push('cjs');
 
-export default defaultConfig;
+module.exports = defaultConfig;
