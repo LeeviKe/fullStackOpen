@@ -15,11 +15,10 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ccc',
     borderRadius: 4,
     padding: 12,
-    marginBottom: 12,
-    fontSize: 16,
+    marginBottom: 11,
+    fontSize: 15,
   },
   button: {
     backgroundColor: '#0366d6',
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 15,
   },
 });
 
@@ -44,15 +43,50 @@ const validationSchema = yup.object().shape({
   password: yup.string().required('Password is required'),
 });
 
+export const SignInContainer = ({
+  values,
+  errors,
+  touched,
+  handleChange,
+  handleSubmit,
+}) => (
+  <View style={styles.container}>
+    <View style={styles.form}>
+      <TextInput
+        style={styles.input}
+        placeholder="Username"
+        value={values.username}
+        onChangeText={handleChange('username')}
+      />
+      {touched.username && errors.username && (
+        <Text style={{ color: '#d73a4a' }}>{errors.username}</Text>
+      )}
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        secureTextEntry={true}
+        value={values.password}
+        onChangeText={handleChange('password')}
+      />
+      {touched.password && errors.password && (
+        <Text style={{ color: '#d73a4a' }}>{errors.password}</Text>
+      )}
+
+      <Pressable style={styles.button} onPress={handleSubmit}>
+        <Text style={styles.buttonText}>Sign in</Text>
+      </Pressable>
+    </View>
+  </View>
+);
+
 const SignIn = () => {
   const navigate = useNavigate();
   const [signIn] = useSignIn();
 
   const onSubmit = async (values) => {
     const { username, password } = values;
-
     try {
-      const { data } = await signIn({ username, password });
+      await signIn({ username, password });
       navigate('/');
     } catch (e) {
       console.log(e);
@@ -64,36 +98,9 @@ const SignIn = () => {
     validationSchema,
     onSubmit,
   });
+  console.log('formik values:', formik.values);
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.form}>
-        <TextInput
-          style={styles.input}
-          placeholder="Username"
-          value={formik.values.username}
-          onChangeText={formik.handleChange('username')}
-        />
-        {formik.touched.username && formik.errors.username && (
-          <Text style={{ color: '#d73a4a' }}>{formik.errors.username}</Text>
-        )}
-        <TextInput
-          style={styles.input}
-          placeholder="Password"
-          secureTextEntry={true}
-          value={formik.values.password}
-          onChangeText={formik.handleChange('password')}
-        />
-        {formik.touched.password && formik.errors.password && (
-          <Text style={{ color: '#d73a4a' }}>{formik.errors.password}</Text>
-        )}
-
-        <Pressable style={styles.button} onPress={formik.handleSubmit}>
-          <Text style={styles.buttonText}>Sign in</Text>
-        </Pressable>
-      </View>
-    </View>
-  );
+  return <SignInContainer {...formik} />;
 };
 
 export default SignIn;

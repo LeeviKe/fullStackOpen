@@ -5,10 +5,14 @@ import { StyleSheet, View } from 'react-native';
 import RepositoryList from './RepositoryList';
 import AppBar from './AppBar';
 import SignIn from './SignIn';
+import SingleRepository from './SingleRepository';
+import ReviewForm from './ReviewForm';
+import SignUp from './SignUp';
+import MyReviews from './MyReviews';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'grey',
+    backgroundColor: '#dadadaff',
     height: '100%',
   },
 });
@@ -20,6 +24,10 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<RepositoryList />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/reviewform" element={<ReviewForm />} />
+        <Route path="/myreviews" element={<MyReviews />} />
+        <Route path="repository/:id" element={<SingleRepository />} />
       </Routes>
     </View>
   );

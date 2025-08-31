@@ -7,7 +7,7 @@ import Text from './Text';
 import Constants from 'expo-constants';
 
 import { useQuery } from '@apollo/client';
-import { ME } from '../graphql/queries';
+import useMe from '../hooks/useMe';
 import { useNavigate } from 'react-router-native';
 
 import useAuthStorage from '../hooks/useAuthStorage';
@@ -25,22 +25,26 @@ const styles = StyleSheet.create({
   },
   linkText: {
     margin: 20,
-    marginHorizontal: 60,
+    marginHorizontal: 20,
     color: '#fff',
     fontWeight: 'bold',
-    width: 90,
+    flexShrink: 0,
   },
 });
 
 const AppBar = () => {
+  const { me, loading } = useMe();
   const navigate = useNavigate();
-  const { data } = useQuery(ME);
+
+  if (loading) {
+    return null;
+  }
 
   const apolloClient = useApolloClient();
   const authStorage = useAuthStorage();
 
   const signPress = () => {
-    if (data?.me) {
+    if (me) {
       console.log('Sign out clicked');
       authStorage.removeAccessToken();
       apolloClient.resetStore();
@@ -55,10 +59,24 @@ const AppBar = () => {
         <Link to="/">
           <Text style={styles.linkText}>Repositories</Text>
         </Link>
+        {!me && (
+          <Link to="/signup">
+            <Text style={styles.linkText}>Sign up</Text>
+          </Link>
+        )}
+        {me && (
+          <Link to="/reviewform">
+            <Text style={styles.linkText}>Create a review</Text>
+          </Link>
+        )}
+        {me && (
+          <Link to="/myreviews">
+            <Text style={styles.linkText}>My reviews</Text>
+          </Link>
+        )}
+
         <Pressable onPress={signPress}>
-          <Text style={styles.linkText}>
-            {data?.me ? 'Sign out' : 'Sign in'}
-          </Text>
+          <Text style={styles.linkText}>{me ? 'Sign out' : 'Sign in'}</Text>
         </Pressable>
       </ScrollView>
     </View>
