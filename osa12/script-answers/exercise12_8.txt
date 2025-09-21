@@ -1,0 +1,147 @@
+Script started on 2025-09-14 21:50:15+03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="120" LINES="30"]
+[?2004h]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ exitdocker exec -it todo-backend-mongo-1 bashps[Kexec[2Ppsexec -it todo-backend-mongo-1 bashps[Kexeccompose -f docker-compose.dev.yml up -d[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml up -d[K[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ [22Pnpm install -g npm@10
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx express-generatorm -v[K[1@ode[C[C[Ccv[1Ppm[C[C[Cx express-generatorm install -g npm@10curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml up -d[K[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ [C[C[C[C[C[C[Cexec[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Ppsexec -it todo-backend-mongo-1 bashexit[K[Kexitdocker exec -it todo-backend-mongo-1 bashps[Kexeccompose -f docker-compose.dev.yml up -d
+[?2004l
+[33mWARN[0m[0000] Found orphan containers ([todo-backend-app-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠸[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠼[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.4s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠴[0m Container todo-backend-mongo-1  Starting                                                                        [34m0.5s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                                         [34m0.6s [0m
+[?25h[?2004h]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ docker compose -f docker-compose.dev.yml up -d[A
+]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ exit[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec -it todo-backend-mongo-1 bashexit[Kdocker exec -it todo-backend-mongo-1 bash[K[K[K[K[K mongos 
+h -u root -p example [7m--authenticationDatabase admin[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--authenticationDatabase admin
+[?2004l
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=adminCurrent Mongosh Log ID:	68c70ed177a0bf9159fe6910
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=admin&appName=mongosh+2.3.2[0m
+Using MongoDB:		8.0.3
+[1m[33mUsing Mongosh[0m:		2.3.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2025-09-14T18:50:52.234+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-09-14T18:50:53.479+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-09-14T18:50:53.479+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-09-14T18:50:53.479+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-09-14T18:50:53.479+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2025-09-14T18:50:53.480+00:00: vm.max_map_count is too low
+   2025-09-14T18:50:53.480+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         12.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jtest> [7Guse the_database
+
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+
+[
+  {
+    _id: ObjectId([32m'68c7048347461738abfe6911'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'68c7048347461738abfe6912'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Guse [1G[0Jthe_database> use[18G.todos.is[1G[0Jthe_database> use.todos.i[26GnsertOne()[1D[1G[0Jthe_database> use.todos.insertOne[44m([49m)[35G[1C[1G[0Jthe_database> use.todos.insertOne()[36G[1D[1G[0Jthe_database> use.todos.insertOne[44m([49m)[35G[1G[0Jthe_database> use.todos.insertOne[44m([49m/)[36G[1G[0Jthe_database> use.todos.insertOne[44m([49m)[35G[1C[1G[0Jthe_database> use.todos.insertOne()[36G~}}}[1G[0Jthe_database> use.todos.insertOne()~}}[39G[1G[0Jthe_database> use.todos.insertOne()~}[38G[1G[0Jthe_database> use.todos.insertOne()~[37G[1G[0Jthe_database> use.todos.insertOne()[36G=[1G[0Jthe_database> use.todos.insertOne()[36G}}[1G[0Jthe_database> use.todos.insertOne()}[37G[1G[0Jthe_database> use.todos.insertOne()[36G[1G[0Jthe_database> use.todos.insertOne([35G[1G[0Jthe_database> use.todos.insertOne[34G[1G[0Jthe_database> use.todos.insertOn[33G[1G[0Jthe_database> use.todos.insertO[32G[1G[0Jthe_database> use.todos.insert[31G[1G[0Jthe_database> use.todos.inser[30G[1G[0Jthe_database> use.todos.inse[29G[1G[0Jthe_database> use.todos.ins[28G[1G[0Jthe_database> use.todos.in[27G[1G[0Jthe_database> use.todos.i[26G[1G[0Jthe_database> use.todos.[25G[1G[0Jthe_database> use.todos[24G[1G[0Jthe_database> use.todo[23G[1G[0Jthe_database> use.tod[22G[1G[0Jthe_database> use.to[21G[1G[0Jthe_database> use.t[20G[1G[0Jthe_database> use.[19G[1G[0Jthe_database> use[18G[1G[0Jthe_database> us[17G[1G[0Jthe_database> u[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({
+
+[1G[0J... [5G  text: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m,
+
+[1G[0J... [5G  d[36mdo[39mdone: fals[33mfalse[39m
+
+[1G[0J... [5G})[1D[1G[0J... })[6G[1D[1G[0J... })[5G[1G[0J... })[5G[1C[1G[0J... })[6G[1C[1G[0J... })[7G[1G[0J... }[6G[1G[0J... [5G^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[A                                                                                                        ^[  ^Z^Z^Z^Z^H  ^[[B^[[A^[[A^C[?2004h]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ docker exec -it todo-backend-mongo-1 mongosh -u root -p example --authenticationDatabase admin
+[?2004l
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=adminCurrent Mongosh Log ID:	68c70f8e7204cc94cdfe6910
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=admin&appName=mongosh+2.3.2[0m
+Using MongoDB:		8.0.3
+[1m[33mUsing Mongosh[0m:		2.3.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2025-09-14T18:50:52.234+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-09-14T18:50:53.479+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-09-14T18:50:53.479+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-09-14T18:50:53.479+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-09-14T18:50:53.479+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2025-09-14T18:50:53.480+00:00: vm.max_map_count is too low
+   2025-09-14T18:50:53.480+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Guse the_database
+
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+
+[1mtodos[0m
+[1G[0Jthe_database> [15G/}}}}[1G[0Jthe_database> /}}}[19G[1G[0Jthe_database> /}}[18G[1G[0Jthe_database> /}[17G[1G[0Jthe_database> /[16G[1G[0Jthe_database> [15Gdb.todos.insertOne({text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m,  d[36mdo[39mdone: fals[33mfalse[39m})
+
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'68c70fe57204cc94cdfe6911'[39m)
+}
+[1G[0Jthe_database> [15Gdb.todos.find({})
+
+[
+  {
+    _id: ObjectId([32m'68c7048347461738abfe6911'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'68c7048347461738abfe6912'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'68c70fe57204cc94cdfe6911'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexir
+
+Uncaught 
+[1m[31mReferenceError[0m: exir is not defined
+[1G[0Jthe_database> [15Gexit
+
+[?2004h]0;leevi@HulluKone: ~/part12-containers-applications-main/todo-app/todo-backend[01;32mleevi@HulluKone[00m:[01;34m~/part12-containers-applications-main/todo-app/todo-backend[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-09-14 21:57:47+03:00 [COMMAND_EXIT_CODE="0"]

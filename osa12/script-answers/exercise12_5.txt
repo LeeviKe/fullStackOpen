@@ -1,0 +1,5 @@
+leevi@HulluKone:/mnt/c/users/letux/koulu/fullstackopen/part12-containers-applications-main/todo-app/todo-backend$ touch Dockerfile
+
+leevi@HulluKone:/mnt/c/users/letux/koulu/fullstackopen/part12-containers-applications-main/todo-app/todo-backend$ docker build -t todo-backend .
+
+leevi@HulluKone:/mnt/c/users/letux/koulu/fullstackopen/part12-containers-applications-main/todo-app/todo-backend$ docker run -p 3000:3000 todo-backend

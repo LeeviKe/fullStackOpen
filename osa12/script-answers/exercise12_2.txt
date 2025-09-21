@@ -1,0 +1,12 @@
+leevi@HulluKone:~$ docker run -it ubuntu bash
+
+root@058aec076c10:/# cd usr/
+root@058aec076c10:/usr# ls
+bin  games  include  lib  lib64  libexec  local  sbin  share  src
+root@058aec076c10:/usr/src# ls
+root@058aec076c10:/usr# cd src/
+root@058aec076c10:/usr/src# ls
+root@058aec076c10:/usr/src# mkdir app
+root@058aec076c10:/usr/src# cd app
+root@058aec076c10:/usr/src/app# touch index.js
+root@058aec076c10:/usr/src/app# exit

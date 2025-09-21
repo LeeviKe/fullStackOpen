@@ -1,0 +1,4 @@
+root@058aec076c10:/# nano /usr/src/app/index.js
+
+ctrl + o
+crtl + x
